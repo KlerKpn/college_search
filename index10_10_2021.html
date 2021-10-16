@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example website with ARIA roles</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- 
+      here is our main header that is used across all the pages of our website
+    -->
+    <header>
+      <h1>Header</h1>
+      <!-- 
+      Even is it's not mandatory, it's common pracrice to put the main navigation menu
+      within the main header
+     -->
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+
+          <li>
+            <a href="#">Our team</a>
+          </li>
+
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+        <!--
+          A search form is another common non-linear way to navigate throught a website
+        -->
+      </nav>
+      <form role="search">
+        <input
+          type="search"
+          name="q"
+          placeholder="search query"
+          aria-label="search through site content"
+        />
+        <input type="submit" value="GO" />
+      </form>
+    </header>
+    <main>
+      <!--
+        Here is our pages main content 
+      -->
+
+      <article role="article">
+        <!--
+          it contains an article
+        -->
+        <h2>Arcticle heading</h2>
+        <p>
+          Я пробегал страны России, Как бедный странник меж людей;
+          <br />
+          Везде шипят коварства змии;<br />
+          Я думал: в свете нет друзей! Нет дружбы нежно-постоянной, И
+          бескорыстной, и простой;<br />
+          Но ты явился, гость незваный, И вновь мне возвратил покой! С тобою
+          чувствами сливаюсь, В речах веселых счастье пью;<br />
+          Но дев коварных не терплю,- И больше им не доверяюсь!..
+        </p>
+        <h3>subsection</h3>
+        <p>
+          Этот вечер решал - Не в любовники выйти ль нам? <br />
+          - Темно, Никто не увидит нас. <br />
+          Я наклонился действительно, И действительно Я, Наклонясь, <br />
+          Сказал ей, Как добрый родитель: "Страсти крут обрыв - Будьте добры,
+          Отойдите <br />
+          Отойдите, <br />
+          Будьте добры".
+        </p>
+        <p>
+          К нам весна шагает Быстрыми шагами, <br />
+          И сугробы тают под её ногами. <br />
+          Чёрные проталины На полях видны. <br />
+          Видно очень тёплые ноги у весны.
+        </p>
+        <h3>another subsection</h3>
+        <p>
+          Часов однообразный бой, Томительная ночи повесть! <br />
+          Язык для всех равно чужой <br />
+          И внятный каждому, как совесть! <br />
+          Кто без тоски внимал из нас, <br />
+          Среди всемирного молчанья, <br />
+          Глухие времени стенанья, <br />
+          Пророчески-прощальный глас?
+        </p>
+        <p>
+          Любви, надежды, тихой славы <br />
+          Недолго нежил нас обман, <br />
+          Исчезли юные забавы, <br />
+          Как сон, как утренний туман; <br />
+          Но в нас горит еще желанье, <br />
+          Под гнетом власти роковой <br />
+          Нетерпеливою душой <br />
+          Отчизны внемлем призыванье. <br />
+          Мы ждем с томленьем упованья
+        </p>
+      </article>
+      <!--
+          the aside content can also be nested within the main content
+        -->
+      <aside role="complementary">
+        <h2>Related</h2>
+        <ul>
+          <li>
+            <a href="#"> Oh I do like to beside</a>
+          </li>
+          <li>
+            <a href="#"> Oh I do like to beside the sea</a>
+          </li>
+          <li>
+            <a href="#"> Although in the North of england</a>
+          </li>
+          <li>
+            <a href="#"> It never stops raining</a>
+          </li>
+          <li>
+            <a href="#">Oh well...</a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <!--
+      And here is our main footer that is used across all the pages of our website
+    -->
+    <footer>
+      <p>Copyright 2050 by nobody. all Rights reversed</p>
+    </footer>
+  </body>
+</html>
